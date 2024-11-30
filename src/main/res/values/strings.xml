@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Agenda de vehículos</string>
+    <string name="password">Password</string>
+    <string name="contrase_a">Contraseña</string>
+</resources>

@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/taller"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".Editar">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Información"
+        android:id="@+id/textView2"
+        android:textSize="50dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Nombre:"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:textColor="#C8FF00"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="80dp" />
+
+    <EditText
+        android:id="@+id/txtNombreModificar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logear"
+        android:textColor="#C8FF00"
+        android:singleLine="true"
+        android:cursorVisible="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Nombre del Contacto"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Reparación:"
+        android:textColor="#C8FF00"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/txtTelModificar"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/txtRepaModificar"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/listar"
+        android:cursorVisible="true"
+        android:ems="10"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="#C8FF00" />
+
+    <Button
+        android:id="@+id/btnGuardarContactoModificar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtRepaModificar"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/ovalo"
+        android:textColor="#FFFF00"
+        android:text="Modificar Contacto" />
+
+    <Button
+        android:id="@+id/btnEliminarModificar"
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#FFFF00"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnGuardarContactoModificar"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ovalo"
+        android:text="Eliminar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Placa del Carro:"
+        android:textColor="#C8FF00"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/txtNombreModificar"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txtPlacaModificar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/logear"
+        android:textColor="#C8FF00"
+        android:singleLine="true"
+        android:cursorVisible="true"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Placa"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Número de teléfono:"
+        android:id="@+id/textView6"
+        android:textColor="#C8FF00"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtPlacaModificar"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/txtTelModificar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/logear"
+        android:cursorVisible="true"
+        android:hint="Dirección del Contacto"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:textColor="#C8FF00" />
+
+    <Button
+        android:id="@+id/btnRegresarModificar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnLlamar"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#FFFF00"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ovalo"
+        android:text="Regresar" />
+
+    <Button
+        android:id="@+id/btnLlamar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnEliminarModificar"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:textColor="#FFFF00"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/ovalo"
+        android:text="Llamar" />
+
+</RelativeLayout>
